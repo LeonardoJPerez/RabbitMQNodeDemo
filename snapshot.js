@@ -1,7 +1,7 @@
 const fs = require('fs');
-const webshot = require('./node_modules/node-webshot-master/lib/webshot');
+const webshot = require('./node_modules/node-webshot/lib/webshot');
 
-module.exports = (url: string, id: string, cb: function) => {
+module.exports = (url, id, cb) => {
     const options = {
         defaultWhiteBackground: true,
         renderDelay: 5000,
